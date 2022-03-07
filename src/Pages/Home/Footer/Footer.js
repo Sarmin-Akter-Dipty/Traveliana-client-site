@@ -35,7 +35,7 @@ const Footer = () => {
                         className="space-y-2"
                     >
                         <h2 className="text-white text-3xl font-bold font-grandHotel tracking-widest">
-                            <span className="text-red-900">Traveliana </span>
+                            <span className="text-red-800">Traveliana </span>
                         </h2>
                         <p>
                             Join us on a Traveliana Team Tour and Step behind the scenes,

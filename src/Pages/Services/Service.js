@@ -45,7 +45,8 @@ const Service = (props) => {
 
                     className="  border-red-700 text-red-700 border-2 py-2 px-6 w-full focus:outline-none hover:bg-red-700 hover:text-white rounded text-lg"
                 >
-                    Details Veiw
+                    <Link to={`/details`} >Details Veiw
+                    </Link>
                 </button>
 
             </div>

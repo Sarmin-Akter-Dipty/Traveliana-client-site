@@ -65,10 +65,10 @@ const Register = () => {
 
                             </div>
                             <div className="relative col-span-8">
-                                <input className="h-10 w-full border-b-2 border-gray-300 text-gray-900  focus:outline-none focus:border-teal-600 focus:ring-0 border-0" type="password" required name="password" required placeholder="Your Password" onBlur={handleOnChange} />
+                                <input className="h-10 w-full border-b-2 border-gray-300 text-gray-900  focus:outline-none focus:border-teal-600 focus:ring-0 border-0" type="password" required name="password" placeholder="Your Password" onBlur={handleOnChange} />
                             </div>
                             <div className="relative col-span-6">
-                                <input className="h-10 w-full border-b-2 border-gray-300 text-gray-900  focus:outline-none focus:border-teal-600 focus:ring-0 border-0" type="password" required name="password2" required placeholder="ReType Your Password" onBlur={handleOnChange} />
+                                <input className="h-10 w-full border-b-2 border-gray-300 text-gray-900  focus:outline-none focus:border-teal-600 focus:ring-0 border-0" type="password" required name="password2" placeholder="ReType Your Password" onBlur={handleOnChange} />
                             </div>
 
                         </div>

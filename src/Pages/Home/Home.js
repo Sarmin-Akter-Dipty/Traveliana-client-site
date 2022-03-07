@@ -1,6 +1,5 @@
-import React from 'react';
+import { useEffect, useState } from 'react';
 import { TailSpin, Watch } from 'react-loader-spinner';
-import { useEffect, useState } from 'react/cjs/react.development';
 import Services from '../Services/Services';
 import About from './About/About';
 import Contact from './Contact/Contact';

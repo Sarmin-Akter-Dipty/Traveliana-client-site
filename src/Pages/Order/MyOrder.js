@@ -1,5 +1,4 @@
-import React from 'react';
-import { useEffect, useState } from 'react/cjs/react.development';
+import React, { useEffect, useState } from 'react';
 import Footer from '../Home/Footer/Footer';
 import Header2 from '../Home/Header/Header2';
 import useAuth from '../hooks/UseAuth';

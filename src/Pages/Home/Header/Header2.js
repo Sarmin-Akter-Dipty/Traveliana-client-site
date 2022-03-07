@@ -1,9 +1,8 @@
+import React, { useState } from 'react';
 import { faPlaneDeparture, faSignInAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Transition } from '@headlessui/react';
-import React from 'react';
 import { Link } from 'react-router-dom';
-import { useState } from 'react/cjs/react.development';
 import useAuth from '../../hooks/UseAuth';
 
 const Header2 = () => {

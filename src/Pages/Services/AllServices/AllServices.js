@@ -1,5 +1,4 @@
-import React from 'react';
-import { useEffect, useState } from 'react/cjs/react.development';
+import React, { useEffect, useState } from 'react';
 import useAuth from '../../hooks/UseAuth';
 import AllService from './AllService';
 import allService from '../../Images/travel/photo-1526772662000-3f88f10405ff.jpg'
@@ -10,7 +9,7 @@ const AllServices = () => {
     const [services, setServices] = useState([])
 
     useEffect(() => {
-        fetch('allServices')
+        fetch('https://mighty-earth-23095.herokuapp.com/allServices')
             .then(res => res.json())
             .then(data => setServices(data));
     }, [])

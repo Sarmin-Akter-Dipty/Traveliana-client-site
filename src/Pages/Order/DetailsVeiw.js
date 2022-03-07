@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { useNavigate, useParams } from 'react-router-dom';
-import { useEffect, useState } from 'react/cjs/react.development';
+import swal from 'sweetalert';
 import Footer from '../Home/Footer/Footer';
 import Header2 from '../Home/Header/Header2';
 import useAuth from '../hooks/UseAuth';
@@ -36,19 +36,19 @@ const DetailsVeiw = () => {
             .then((res) => res.json())
             .then((data) => {
                 console.log(data)
-                // if (data.insertedId) {
-                //     swal('Order Confirmed successfully!').then((result) => {
-                //         if (result.isConfirmed) {
-                //             navigate.push("/home");
-                //         } else if (result.isDenied) {
-                //             navigate.push("/myOrders");
-                //         }
-                //     });
+                if (data.insertedId) {
+                    swal('Order Confirmed successfully!').then((result) => {
+                        if (result.isConfirmed) {
+                            navigate.push("/home");
+                        } else if (result.isDenied) {
+                            navigate.push("/myOrders");
+                        }
+                    });
 
 
-                // } else {
+                } else {
 
-                // }
+                }
             })
             .catch((err) => {
                 console.log(err.message);

@@ -1,5 +1,4 @@
-import React from 'react';
-import { useEffect, useState } from 'react/cjs/react.development';
+import React, { useEffect, useState } from 'react';
 import './Service.css'
 import { GrLinkDown } from 'react-icons/gr';
 import useAuth from '../hooks/UseAuth';

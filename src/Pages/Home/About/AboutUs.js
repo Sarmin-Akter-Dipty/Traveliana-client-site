@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import aboutus from '../../Images/New folder/photo-1530789253388-582c481c54b0.jpg'
 import about from '../../Images/3.jpg'
 import about2 from '../../Images/New folder/photo-1543746746-46047c4f4bb0.jpg'
@@ -6,10 +6,6 @@ import about3 from '../../Images/New folder/photo-1576667896105-31ffa7b30722.jpg
 import about4 from '../../Images/New folder/photo.jpg'
 import about5 from '../../Images/New folder/photo-1523225918988-00624e6d8fee.jpg'
 import about6 from '../../Images/New folder/photo-1530789253388-582c481c54b0.jpg'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faMailBulk, faMobileAlt, faPlaneDeparture, faSignInAlt } from '@fortawesome/free-solid-svg-icons';
-import { Link } from 'react-router-dom';
-import { Transition } from '@headlessui/react';
 import useAuth from '../../hooks/UseAuth';
 import { GrLinkDown } from 'react-icons/gr';
 import Footer from '../Footer/Footer';
@@ -18,7 +14,7 @@ import Header2 from '../Header/Header2';
 
 
 const AboutUs = () => {
-    const [isOpen, setIsOpen] = useState(false);
+
     const { user, logOut } = useAuth();
     return (
         <div style={{
