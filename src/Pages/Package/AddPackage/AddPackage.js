@@ -10,7 +10,7 @@ import Header2 from '../../Home/Header/Header2';
 const AddPackage = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
-        axios.post('http://localhost:5000/services', data)
+        axios.post('https://mighty-earth-23095.herokuapp.com/services', data)
             .then(res => {
                 if (res.data.insertedId) {
                     swal('Added successfully')

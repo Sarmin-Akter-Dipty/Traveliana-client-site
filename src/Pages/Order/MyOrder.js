@@ -10,7 +10,7 @@ const MyOrder = () => {
     const [status, setStatus] = useState(null)
     const { user } = useAuth()
     useEffect(() => {
-        fetch(`http://localhost:5000/myorders?email=${user.email}`)
+        fetch(`myorders?email=${user.email}`)
             .then(res => res.json())
             .then(data => setMyOrders(data))
 
@@ -19,7 +19,7 @@ const MyOrder = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure ,you wanted delete?');
         if (proceed) {
-            const url = `http://localhost:5000/allOrders/${id}`
+            const url = `https://mighty-earth-23095.herokuapp.com/allOrders/${id}`
             fetch(url, {
                 method: 'DELETE'
             })
@@ -37,7 +37,7 @@ const MyOrder = () => {
         }
     }
     const approveOrder = id => {
-        const url = `http://localhost:5000/myorders?id=${id}`
+        const url = `https://mighty-earth-23095.herokuapp.com/myorders?id=${id}`
         fetch(url, {
             method: 'PUT',
 

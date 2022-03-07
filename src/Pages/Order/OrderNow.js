@@ -17,7 +17,7 @@ const OrderNow = () => {
     console.log(service);
     useEffect(() => {
 
-        fetch(`http://localhost:5000/services/${servicesId}`)
+        fetch(`https://mighty-earth-23095.herokuapp.com/services/${servicesId}`)
             .then(res => res.json())
             .then(data => setService(data))
     }, [servicesId])
@@ -29,7 +29,7 @@ const OrderNow = () => {
 
         data.service = service;
         data.status = 'Pending'
-        fetch("http://localhost:5000/orders", {
+        fetch("https://mighty-earth-23095.herokuapp.com/orders", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),
