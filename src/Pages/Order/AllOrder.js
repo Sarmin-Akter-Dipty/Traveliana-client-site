@@ -10,7 +10,9 @@ const AllOrder = () => {
         }}>
             <Header2></Header2>
             <div className='my-40'>
-                <h1 className='text-white text-center'>All Order</h1>
+                <h1 className='text-red-800 text-center text-5xl font-bold'>Upcoming......</h1>
+                <h1 className='text-white text-center text-5xl my-5'>It will be implemented very soon</h1>
+                <h1 className='text-white text-center text-2xl '>Stay with us, stay well</h1>
             </div>
             <Footer></Footer>
         </div>

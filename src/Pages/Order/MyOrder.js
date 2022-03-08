@@ -57,7 +57,11 @@ const MyOrder = () => {
         }}>
             <Header2></Header2>
             <div className='my-40 '>
-                <h2 className='text-white text-center'>My Orders:{myOrders.length}</h2>
+                <h1 className='text-red-800 text-center text-5xl font-bold'>Upcoming......</h1>
+                <h1 className='text-white text-center text-5xl my-5'>It will be implemented very soon</h1>
+                <h1 className='text-white text-center text-2xl '>Stay with us, stay well</h1>
+                {/* <h2 className='text-white text-center'>My Orders:{myOrders.length}</h2> */}
+
                 {
                     myOrders?.map(order => <div key={order.service._id}>
                         <h3>Order Name: <span className="text">{order.service.name}</span></h3>
